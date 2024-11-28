@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -34,11 +33,8 @@
             id="navbarNavDropdown"
           >
             <ul class="navbar-nav">
-              <li class="nav-item"><router-link class="nav-link active link-light fs-5" to="/">Presentación</router-link></li>
-              <li class="nav-item"><router-link class="nav-link active link-light fs-5" to="/productos">Productos</router-link></li>
-              <li class="nav-item"><router-link class="nav-link active link-light fs-5" to="/contactos">Contactos</router-link></li>
-              <li class="nav-item"><router-link class="nav-link active link-light fs-5" to="/carrito"><i class="bi bi-cart4 me-4 ms-4"></i></router-link></li>
-
+              <li class="nav-item"><router-link class="nav-link active link-light fs-5" to="/admin">Editar libros</router-link></li>
+              <li class="nav-item"><router-link class="nav-link active link-light fs-5" to="/admin-sec=suscritos">Suscritos</router-link></li>
             </ul>
             
           </div>

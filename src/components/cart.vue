@@ -1,5 +1,5 @@
 <template>
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+    <div  class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
       <div class="card h-100"  style="cursor: pointer;">
         <div class="card-body">
           <img class="img-fluid d-block mx-auto" :src="foto" :alt="nombre">
@@ -13,42 +13,43 @@
         </div>
       </div>
     </div>
+
+   
   </template>
   
   <script>
+  
   export default {
     props: {
       nombre: String,
       foto: String,
       precio: Number,
-      id: Number
+      id: Number,
+      car: Array,
+      products: Array,
+      filtro: Array,
+      filtroCat: Array
     },
     
     computed:{
       filtradas(){                                           
-             const lista=this.products.filter(task=> task.nombre.toLowerCase().includes(this.filtro.toLowerCase())&&task.categoria.includes(this.filtroCat))
+             const lista=this.products.filter(task=>
+              task.nombre.toLowerCase().includes(this.filtro.toLowerCase())&&
+              task.categoria.includes(this.filtroCat))
              return lista ;   
              
         },
     },
+    
     methods: {
       addCart() {
-        this.$emit('add', {
+        this.$emit('add',{
           id: this.id,
           nombre: this.nombre,
           precio: this.precio,
           foto: this.foto
         });
-      },
-      agregando(product) {
-      const itemCarrito = this.car.find((item) => item.id === product.id);
-      if (itemCarrito) {
-        itemCarrito.cantidad++;
-      } else {
-        this.car.push({ ...product, cantidad: 1 });
       }
-    },
-      
     }
   };
   </script>

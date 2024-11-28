@@ -2,30 +2,14 @@
     <div id="slideCocina" class="carousel slide navbar-expand-md margen-top">
       <div class="carousel-indicators">
         <button
-          type="button"
-          data-bs-target="#slideCocina"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
+          type="button"data-bs-target="#slideCocina"data-bs-slide-to="0"class="active"aria-current="true"aria-label="Slide 1"
         ></button>
-        <button
-          type="button"
-          data-bs-target="#slideCocina"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
+        <button type="button" data-bs-target="#slideCocina" data-bs-slide-to="1" aria-label="Slide 2"
         ></button>
-        <button
-          type="button"
-          data-bs-target="#slideCocina"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
+        <button type="button" data-bs-target="#slideCocina" data-bs-slide-to="2" aria-label="Slide 3"
         ></button>
       </div>
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide pt-4"
-        data-bs-ride="carousel"
+      <div id="carouselExampleAutoplaying" class="carousel slide pt-4" data-bs-ride="carousel"
       >
         <div class="carousel-inner">
         <picture class="carousel-item active">
@@ -94,29 +78,27 @@
       </button>
     </div>
 
-    <section id="nuestros" class="row py-5 d-flex flex-row-reverse">
-        <section class="col-12 col-lg-6">
-          <h2 class="col-8">Bienvenidos a LibroExpress</h2>
-          <p class="fs-5"> 
-          En LibroExpress, somos apasionados por los libros y nos dedicamos a ofrecer una experiencia de compra única para lectores de todas las edades. Nuestra tienda en línea combina la comodidad de la tecnología con la pasión por la lectura, ofreciéndote una amplia selección de libros físicos y ebooks para que puedas disfrutar de tus lecturas favoritas en cualquier formato que prefieras.
-          </p>
-          <p class="fs-5">
-          Desde novelas cautivadoras y libros infantiles hasta guías educativas y ensayos profundos, en LibroExpress encontrarás todo lo que necesitas para enriquecer tu biblioteca personal. Con un proceso de compra simple y opciones de envío flexibles, estamos aquí para hacer que tu experiencia de lectura sea lo más placentera posible.
-          </p>
-        </section>
-        <div class=" slide col-12 col-lg-6 text-center Base"
-          
-        >
-          
-            <picture class="carousel-item active">
-              <img
-              
-                v-bind:src="imgPrecentacion"
-                alt="img presentacion"
-              />
-            </picture>
-          </div>
-      </section>
+    <section id="nuestros" class="row mx-0 py-5 d-flex flex-row-reverse">
+  <section class="col-12 col-lg-6 px-3">
+    <h2 class="col-12">Bienvenidos a LibroExpress</h2>
+    <p class="fs-5">
+      En LibroExpress, somos apasionados por los libros y nos dedicamos a ofrecer una experiencia de compra única para lectores de todas las edades. Nuestra tienda en línea combina la comodidad de la tecnología con la pasión por la lectura, ofreciéndote una amplia selección de libros físicos y ebooks para que puedas disfrutar de tus lecturas favoritas en cualquier formato que prefieras.
+    </p>
+    <p class="fs-5">
+      Desde novelas cautivadoras y libros infantiles hasta guías educativas y ensayos profundos, en LibroExpress encontrarás todo lo que necesitas para enriquecer tu biblioteca personal. Con un proceso de compra simple y opciones de envío flexibles, estamos aquí para hacer que tu experiencia de lectura sea lo más placentera posible.
+    </p>
+  </section>
+  <div class="slide col-12 col-lg-6 text-center Base">
+    <picture>
+      <img 
+        v-bind:src="imgPrecentacion" 
+        alt="img presentacion" 
+        class="img-fluid mx-auto d-block" 
+      />
+    </picture>
+  </div>
+</section>
+
 </template>
 
 <script>
@@ -126,12 +108,8 @@
             imgCArrusel2:String,
             imgCArrusel3:String,
             imgPrecentacion:String,
-
-
         },
-        methods: {
-
-        }
+        
     }
 </script>
 

@@ -15,9 +15,10 @@
             <div class="col-md-4 mb-3 ">
                 <h5 class="fs-4">Enlaces Útiles</h5>
                 <ul class="list-unstyled">
-                <li><a class="nav-link active link-light fs-5 " href="?sec=home">Presentación</a></li>
-                <li><a class="nav-link active link-light fs-5" href="?sec=producto">Productos</a></li>
-                </ul>
+                    <li class="nav-item"><router-link class="nav-link active link-light fs-5" to="/">Presentación</router-link></li>
+                    <li class="nav-item"><router-link class="nav-link active link-light fs-5" to="/productos">Productos</router-link></li>
+                    <li class="nav-item"><router-link class="nav-link active link-light fs-5" to="/carrito"><i class="bi bi-cart4 me-4 ms-4"></i></router-link></li>
+                 </ul>
             </div>
             <!-- Redes Sociales -->
             <div class="col-md-4 mb-3">
@@ -41,11 +42,11 @@
     export default {
         name: 'footer',
         props: {
-            //contactos
+            
             Direccion: String,
             Telefono:String,
             Email:String,
-            //Siguenos
+            
             Instagram:String,
             Facebook:String,
             Twitter:String,
